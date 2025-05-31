@@ -43,15 +43,15 @@ paginate = 10
         description = "A space for tangled thoughts and unfiltered expression in English."
     [[languages.en.menu.main]]
         name = "🏠 Home"
-        url = "/"
+        url = "/en/"
         weight = 10
     [[languages.en.menu.main]]
         name = "🗞 Posts"
-        url = "/posts/"
+        url = "/en/posts/"
         weight = 20
     [[languages.en.menu.main]]
         name = "🧠 About Me"
-        url = "/about-me/"
+        url = "/en/about-me/"
         weight = 30
     [[languages.en.menu.main]] # Adicione o item para o switcher de idioma
         name = "🌐"
@@ -64,10 +64,37 @@ paginate = 10
         weight = 50
 
 [params]
-  defaultTheme = "light" # Fallback para o tema
+  defaultTheme = "light"
   description = ":3"
-  # Opcional: Você pode definir o idioma padrão aqui, embora languageCode e defaultContentLanguage já façam isso
-  # defaultLanguage = "en" # Seu fallback de idioma
+  # Add useful global params
+  author = "miiiig"
+  favicon = "/favicon.ico"
+  keywords = ["blog", "thoughts", "multilingual"]
+  
+  # Privacy and performance
+  privacy_policy_url = "/privacy/"
+  
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+  [markup.highlight]
+    style = "github"
+    lineNos = true
+    tabWidth = 2
 
-[markup.goldmark.renderer]
-unsafe = true
+# SEO improvements
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+
+# Privacy settings (optional)
+[privacy]
+  [privacy.googleAnalytics]
+    disable = false
+    respectDoNotTrack = true
+  [privacy.youtube]
+    privacyEnhanced = true
