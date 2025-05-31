@@ -1,0 +1,15 @@
+<meta name="keywords" content="{{ .Site.Params.keywords | default "blog, tecnologia, pessoal" }}">
+<meta name="author" content="{{ .Site.Params.author | default "Seu Nome" }}">
+
+<link rel="icon" href="{{ "images/favicon.ico" | relURL }}">
+
+{{ with .OutputFormats.Get "RSS" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
+{{ if .IsHome }}
+<script>
+    // Script específico para a página inicial
+    console.log("Bem-vindo à página inicial!");
+</script>
+{{ end }}

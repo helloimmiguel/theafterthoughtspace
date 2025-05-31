@@ -1,0 +1,189 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&family=EB+Garamond:wght@400;700&display=swap');
+
+    :root {
+      --width: 720px;
+      --font-serif: 'EB Garamond', serif;
+      --font-mono: 'Roboto Mono', monospace;
+      --background-color: #FFFAF0; /* fundo claro */
+      --text-color: #111111;       /* texto escuro */
+      --border-color: #FF4500;     /* vermelho vivo da borda */
+      --shadow-color: #000000;     /* sombra preta */
+      --accent-color: var(--border-color); /* Usa a cor da borda (#e60026) como destaque */
+      --font-secondary: var(--font-serif);
+      --link-color: var(--accent-color);
+      --main-color: #fff0e0;
+      --code-color: #111;
+    }
+
+    /* Tema Escuro */
+    body.dark-theme {
+        --background-color: #1a1a1a;
+        --text-color: #f0f0f0;
+        --border-color: #f1c40f; /* Um roxo mais escuro para a borda */
+        --shadow-color: #f0f0f0;
+        --accent-color: #f1c40f;
+        --main-color: #2a2a2a;
+        --code-color: #e0e0e0;
+    }
+
+
+    body {
+      font-family: var(--font-serif);
+      font-size: var(--font-scale);
+      margin: auto;
+      padding: 2em;
+      max-width: var(--width);
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      text-align: left;
+      transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-serif);
+      font-weight: 700;
+      text-transform: lowercase;
+      margin-bottom: 0.5em;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    a {
+      font-family: var(--font-mono);
+      color: var(--accent-color);
+      text-decoration: none;
+      border-bottom: 1px dotted var(--accent-color);
+    }
+
+    code, pre {
+      font-family: var(--font-mono);
+      background: var(--code-bg);
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+
+    blockquote {
+      border-left: 3px solid var(--border-color);
+      padding-left: 1em;
+      font-style: italic;
+      color: var(--text-color);
+      background-color: rgba(0, 0, 0, 0.03);
+    }
+
+    footer {
+      font-family: var(--font-mono);
+      margin-top: 4em;
+      border-top: 2px solid var(--border-color);
+      padding-top: 2em;
+      font-size: 0.9em;
+      color: var(--text-color);
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      border: 1px solid var(--border-color);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px dashed var(--border-color);
+      margin: 2em 0;
+    }
+
+    .badge-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 12px; /* espaçamento entre badges */
+      justify-content: center; /* centraliza horizontalmente */
+      max-width: var(--width);
+      margin: 2em auto;
+    }
+
+    .badge-grid img {
+      image-rendering: pixelated;
+      border: 1px solid black;
+      box-shadow: 2px 2px 0 #000;
+    }
+
+    p a, li a, span a {
+      font-family: var(--font-secondary); /* sua fonte serifada */
+      color: var(--link-color);
+      text-decoration: underline;
+      border: none;
+    }
+
+    a:hover {
+      background-color: var(--main-color);
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    .cowsay {
+      display: table; /* faz o bloco encolher ao tamanho do conteúdo */
+      margin: 3em auto; /* centraliza horizontalmente */
+      color: var(--code-color);
+      font-family: var(--font-secondary), monospace;
+      font-size: 0.9em;
+      text-align: center;
+      line-height: 1.4;
+      padding: 1.5em;
+      border: 2px dashed var(--border-color);
+      border-radius: 12px;
+      box-shadow: 4px 4px 0 black;
+      white-space: pre-wrap;
+      background: transparent;
+      overflow-x: auto;
+    }
+
+    /* Estilos da navbar */
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      margin: 2em 0;
+      padding: 0;
+    }
+
+    .lang-navbar {
+      display: flex;
+      gap: 1.5em;
+      list-style: none;
+    }
+
+    .lang-navbar a {
+      font-family: var(--font-mono);
+      color: var(--accent-color);
+      text-decoration: none;
+      border-bottom: 1px dotted var(--accent-color);
+      padding: 0.5em 0.8em;
+      transition: all 0.2s ease;
+    }
+
+    .lang-navbar a:hover {
+      background-color: var(--background-color);
+      color: var(--border-color);
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    /* Esconde a navbar quando não ativa */
+    .lang-navbar[style*="display: none"] {
+      display: none !important;
+    }
+
+    .language-switcher a, .theme-toggle {
+        background-color: var(--main-color);
+        color: var(--text-color);
+        border: 1px solid var(--border-color);
+        padding: 0.5em 1em;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .language-switcher a:hover, .theme-toggle:hover {
+        background-color: var(--accent-color);
+        color: white;
+        border-color: var(--accent-color);
+    }

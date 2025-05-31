@@ -1,0 +1,73 @@
+baseURL = "https://theafterthought.space"
+languageCode = "pt-br"
+defaultContentLanguage = "pt"
+title = "the afterthought space"
+theme = "thoughtout"
+paginate = 10
+
+[languages]
+  [languages.pt]
+    title = "the afterthought space"
+    weight = 1
+    contentDir = "content/pt"
+    languageName = "Português"
+    [languages.pt.params]
+        description = "Um espaço para pensamentos e desabafos em português."
+    [[languages.pt.menu.main]]
+        name = "🏠 Página Principal"
+        url = "/"
+        weight = 10
+    [[languages.pt.menu.main]]
+        name = "🗞 Posts"
+        url = "/posts/"
+        weight = 20
+    [[languages.pt.menu.main]]
+        name = "🧠 Sobre Mim"
+        url = "/about-me/"
+        weight = 30
+    [[languages.pt.menu.main]] # Adicione o item para o switcher de idioma
+        name = "🌐" # Nome que aparecerá no menu (será substituído pelo JS)
+        identifier = "language-switcher" # Identificador único
+        weight = 40
+    [[languages.pt.menu.main]] # Adicione o item para o switcher de tema
+        name = "💡" # Nome que aparecerá no menu (será substituído pelo JS)
+        identifier = "theme-toggle" # Identificador único
+        weight = 50
+
+  [languages.en]
+    title = "the afterthought space"
+    weight = 2
+    contentDir = "content/en"
+    languageName = "English"
+    [languages.en.params]
+        description = "A space for tangled thoughts and unfiltered expression in English."
+    [[languages.en.menu.main]]
+        name = "🏠 Home"
+        url = "/"
+        weight = 10
+    [[languages.en.menu.main]]
+        name = "🗞 Posts"
+        url = "/posts/"
+        weight = 20
+    [[languages.en.menu.main]]
+        name = "🧠 About Me"
+        url = "/about-me/"
+        weight = 30
+    [[languages.en.menu.main]] # Adicione o item para o switcher de idioma
+        name = "🌐"
+        identifier = "language-switcher"
+        weight = 40
+    [[languages.en.menu.main]] # Adicione o item para o switcher de tema
+        name = "💡"
+        identifier = "theme-toggle"
+        url= "#"
+        weight = 50
+
+[params]
+  defaultTheme = "light" # Fallback para o tema
+  description = ":3"
+  # Opcional: Você pode definir o idioma padrão aqui, embora languageCode e defaultContentLanguage já façam isso
+  # defaultLanguage = "en" # Seu fallback de idioma
+
+[markup.goldmark.renderer]
+unsafe = true

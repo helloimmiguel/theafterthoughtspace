@@ -1,0 +1,62 @@
+// static/js/main.js
+document.addEventListener('DOMContentLoaded', () => {
+    const body = document.body;
+    const themeToggle = document.getElementById('theme-toggle');
+    const languageSwitcher = document.getElementById('language-switcher'); // O elemento div
+
+    // --- Lógica para o Tema ---
+
+    // Função para aplicar o tema (light ou dark)
+    const applyTheme = (theme) => {
+        if (theme === 'dark') {
+            body.classList.add('dark-theme');
+            if (themeToggle) {
+                themeToggle.innerHTML = '🌙'; // Ícone para tema escuro
+            }
+            localStorage.setItem('theme', 'dark');
+        } else {
+            body.classList.remove('dark-theme');
+            if (themeToggle) {
+                themeToggle.innerHTML = '☀️'; // Ícone para tema claro
+            }
+            localStorage.setItem('theme', 'light');
+        }
+    };
+
+    // Carrega o tema salvo no localStorage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        applyTheme(savedTheme);
+    } else {
+        // Fallback para tema claro se não houver preferência salva
+        applyTheme('light');
+    }
+
+    // Adiciona evento de clique para o botão de tema
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            if (body.classList.contains('dark-theme')) {
+                applyTheme('light');
+            } else {
+                applyTheme('dark');
+            }
+        });
+    }
+
+    // --- Lógica para o Idioma (fallback para inglês) ---
+
+    // O Hugo já lida com o fallback de idioma (defaultContentLanguage no config.toml).
+    // O JavaScript aqui é mais para exibir a UI do switcher.
+    // O fallback para inglês já é gerenciado pelo Hugo se 'en' for o defaultContentLanguage.
+    // Se o usuário não tiver preferência explícita, o Hugo servirá o idioma padrão do site.
+
+    // A lógica de "referir automaticamente" com fallback para inglês já está no Hugo
+    // através de `defaultContentLanguage = "en"` no `config.toml` (se você quiser inglês como padrão).
+    // Se o navegador do usuário solicitar um idioma não disponível, Hugo cairá para o `defaultContentLanguage`.
+
+    // No seu caso, o defaultContentLanguage está como `pt`. Se quiser o fallback para inglês, mude:
+    // `defaultContentLanguage = "en"` no `config.toml` (e ajuste o `languageCode` se necessário).
+    // O que o JS pode fazer é ler a preferência do navegador (mas é melhor deixar Hugo fazer isso no servidor)
+    // ou simplesmente garantir que os links do switcher estejam corretos.
+    // A implementação atual do switcher de idioma já lida com a exibição dos links disponíveis.
+});

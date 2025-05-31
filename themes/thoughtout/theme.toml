@@ -1,0 +1,11 @@
+name = "Thoughtout"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "Theme inspired in yellowed textbooks and notion to bring peace to your thoughts"
+homepage = "https://theafterthought.space"
+tags = ["minimal", "retro", "personal", "monospace", "blog"]
+min_version = "0.69"
+
+[author]
+  name = "mig"
+  homepage = "https://theafterthought.space"

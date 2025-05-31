@@ -1,0 +1,30 @@
+recentPosts:
+  other: "Postagens recentes"
+readMore:
+  other: "Leia mais"
+on_date:
+  other: "%d de %s de %d"
+month_jan:
+  other: "jan"
+month_feb:
+  other: "fev"
+month_mar:
+  other: "mar"
+month_apr:
+  other: "abr"
+month_may:
+  other: "mai"
+month_jun:
+  other: "jun"
+month_jul:
+  other: "jul"
+month_aug:
+  other: "ago"
+month_sep:
+  other: "set"
+month_oct:
+  other: "out"
+month_nov:
+  other: "nov"
+month_dec:
+  other: "dez"

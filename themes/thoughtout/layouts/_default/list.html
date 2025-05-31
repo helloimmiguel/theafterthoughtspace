@@ -1,0 +1,19 @@
+{{ define "main" }}
+<h2>{{ i18n "recentPosts" }}</h2>
+<ul>
+  {{ range .Pages.ByDate.Reverse }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a> —
+    {{ $day := .Date.Day }}
+    {{ $month := lower (.Date.Format "Jan") }}
+    {{ $monthKey := print "month_" $month }}
+    {{ $monthName := i18n $monthKey }}
+    {{ $year := .Date.Year }}
+    {{ printf "%02d %s %d" $day $monthName $year }}
+  </li>
+  {{ end }}
+</ul>
+
+
+{{ end }}
+

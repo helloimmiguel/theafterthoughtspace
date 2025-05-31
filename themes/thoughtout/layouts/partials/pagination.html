@@ -1,0 +1,81 @@
+{{ if gt .Paginator.TotalPages 1 }}
+<nav class="pagination" role="navigation" aria-label="pagination">
+  <ul>
+    {{ if .Paginator.HasPrev }}
+    <li>
+      <a class="pagination-link" href="{{ .Paginator.Prev.URL }}">← Anterior</a>
+    </li>
+    {{ end }}
+
+    {{ range .Paginator.Pagers }}
+      {{ if eq . "." }}
+      <li>
+        <span class="pagination-ellipsis">&hellip;</span>
+      </li>
+      {{ else if eq .PageNumber .Paginator.PageNumber }}
+      <li>
+        <a class="pagination-link is-current" aria-current="page" href="{{ .URL }}">{{ .PageNumber }}</a>
+      </li>
+      {{ else }}
+      <li>
+        <a class="pagination-link" href="{{ .URL }}">{{ .PageNumber }}</a>
+      </li>
+      {{ end }}
+    {{ end }}
+
+    {{ if .Paginator.HasNext }}
+    <li>
+      <a class="pagination-link" href="{{ .Paginator.Next.URL }}">Próxima →</a>
+    </li>
+    {{ end }}
+  </ul>
+</nav>
+{{ end }}
+
+<style>
+/* Adicione este CSS ao seu style.css para estilizar a paginação */
+.pagination {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.pagination ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.pagination li {
+  display: inline-block;
+}
+
+.pagination-link {
+  display: block;
+  padding: 0.5em 1em;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: background-color 0.2s ease;
+}
+
+.pagination-link:hover {
+  background-color: var(--main-color);
+  color: var(--accent-color);
+}
+
+.pagination-link.is-current {
+  background-color: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+  font-weight: bold;
+  pointer-events: none; /* Desabilita clique na página atual */
+}
+
+.pagination-ellipsis {
+  padding: 0.5em 1em;
+  color: var(--text-color);
+}
+</style>

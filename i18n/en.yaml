@@ -1,0 +1,32 @@
+recentPosts:
+  other: "Recent Posts"
+readMore:
+  other: "Read more"
+on_date:
+  other: "%s %d, %d"
+on_date:
+  other: "%s %d, %d"
+month_jan:
+  other: "January"
+month_feb:
+  other: "February"
+month_mar:
+  other: "March"
+month_apr:
+  other: "April"
+month_may:
+  other: "May"
+month_jun:
+  other: "June"
+month_jul:
+  other: "July"
+month_aug:
+  other: "August"
+month_sep:
+  other: "September"
+month_oct:
+  other: "October"
+month_nov:
+  other: "November"
+month_dec:
+  other: "December"

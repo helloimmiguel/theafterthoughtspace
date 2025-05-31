@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>the afterthought space</title>
+    <link>http://localhost:1313/en/</link>
+    <description>Recent content on the afterthought space</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 30 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The myths of marble, glass and blood: A sociological analysis of Monument Mythos</title>
+      <link>http://localhost:1313/en/posts/the-myths-of-marble-glass-and-blood-a-sociological-analysis-of-monument-mythos/</link>
+      <pubDate>Fri, 30 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/the-myths-of-marble-glass-and-blood-a-sociological-analysis-of-monument-mythos/</guid>
+      <description>Why do we build monuments? We build them to remember, they say; however, we actually build them to forget. Quoting the Polish sociologist Lech Nijakowski (2006), monuments do not merely commemorate the past; they actively claim territory and impose meaning. In a summary, they are built not just to commemorate the past but to commemorate and weaponize one past; their past. They mythologize and exaggerate a nationalist vision of a past that reduces history and it&#39;s complexities way into pride and enforce a hegemonic narrative of a chosen, liberated people.</description>
+    </item>
+    <item>
+      <title>The place where critical thinking is subversive</title>
+      <link>http://localhost:1313/en/posts/ed/</link>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/ed/</guid>
+      <description>Introduction I don&amp;rsquo;t think I introduced myself in my last post. I&amp;rsquo;m a 14-year-old teenager from Brazil, and I wanted to write down some thoughts I&amp;rsquo;ve had about politics — and just some thoughts I&amp;rsquo;ve had about the world. In particular, my experience with “gringos” (mostly Americans), their school system compared to ours, and how interacting with and discovering the Anglophonic side of the internet changed my entire worldview.&#xA;I&amp;rsquo;ve always heard adults make remarks like: “This country is doomed forever!</description>
+    </item>
+    <item>
+      <title>The Socio-Political aspect of Frutiger Aero [FA]</title>
+      <link>http://localhost:1313/en/posts/fa/</link>
+      <pubDate>Sat, 17 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/posts/fa/</guid>
+      <description>Nowadays, the design language and pseudo-artistic movement known as “Frutiger Aero” has resurfaced on platforms like TikTok, often through glossy ecological CGI images accompanied by captions such as “This was the future we were promised.” These posts collectively point to a single idea: Capitalism used to be optimistic. This optimism isn&amp;rsquo;t common even when compared to past Western design languages such as Memphis and Y2K, which also featured futuristic imagery but differ from Frutiger Aero in the use of ecological, skeuomorphic, and optimistic imagery allied to the new translucent effects that CGI could generate.</description>
+    </item>
+    <item>
+      <title>Sobre Mim</title>
+      <link>http://localhost:1313/en/about-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/about-me/</guid>
+      <description>Olá! Eu sou o Mig, adolescente marxista, que escreve com vísceras e não tem medo da contradição&amp;hellip;&#xA;[mais texto&amp;hellip;]</description>
+    </item>
+  </channel>
+</rss>

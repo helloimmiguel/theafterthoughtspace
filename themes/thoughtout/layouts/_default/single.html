@@ -1,0 +1,20 @@
+{{ define "main" }}
+<article>
+    <p>
+        {{ $day := .Date.Day }}
+        {{ $month := lower (.Date.Format "Jan") }}
+        {{ $monthKey := print "month_" $month }}
+        {{ $monthName := i18n $monthKey }}
+        {{ $year := .Date.Year }}
+
+        {{ if eq .Lang "en" }}
+        {{ printf (i18n "on_date") $monthName $day $year }}
+        {{ else }}
+        {{ printf (i18n "on_date") $day $monthName $year }}
+        {{ end }}
+
+    </p>
+
+    {{ .Content }}
+</article>
+{{ end }}

@@ -1,0 +1,56 @@
+        <!DOCTYPE html>
+        <html lang="{{ .Lang }}">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+            <title>{{ .Title }}</title>
+            <link rel="canonical" href="{{ .Permalink }}">
+            <meta name="robots" content="noindex, nofollow">
+            <meta name="title" content="{{ .Title }}">
+            <meta name="description" content="{{ .Params.description | default .Site.Params.description }}">
+
+            <script type="application/ld+json">
+              {
+                "@context": "http://schema.org",
+                "@type": "website",
+                "name": "{{ .Site.Title }}",
+                "url": "{{ .Site.BaseURL }}",
+                "description": "{{ .Site.Params.description | default ":3" }}",
+                "about": {
+                  "@type": "{{ .Site.Title }}",
+                  "description": "{{ .Site.Params.description | default ":3" }}"
+                }
+              }
+            </script>
+            <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+            {{ partial "head.html" . }}
+        </head>
+        <body class="home" onload="(function() { document.cookie = `timezone=${Intl.DateTimeFormat().resolvedOptions().timeZone};path=/`; })()">
+            <header>
+                <a class="title" href="{{ .Site.BaseURL }}">
+                    <h1>{{ .Site.Title }}</h1>
+                </a>
+                
+                <nav class="navbar">
+  {{ range .Site.Menus.main }}
+    {{ if eq .Identifier "language-switcher" }}
+      <a id="language-switcher" href="#">🌐</a>
+    {{ else if eq .Identifier "theme-toggle" }}
+      <a id="theme-toggle" href="#">{{ .Name }}</a>
+    {{ else }}
+      <a href="{{ .URL }}">{{ .Pre }} {{ .Name }}</a>
+    {{ end }}
+  {{ end }}
+</nav>
+
+            <main>
+                {{ block "main" . }}
+                {{ end }}
+            </main>
+            <footer style="padding:25px 0;">
+                <span>Powered by Hugo</span>
+            </footer>
+            <script src="{{ "js/main.js" | relURL }}"></script>
+        </body>
+        </html>
+        

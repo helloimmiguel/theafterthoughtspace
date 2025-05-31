@@ -1,0 +1,16 @@
+<div class="language-switcher">
+    {{ if .IsTranslated }}
+        {{ range .Translations }}
+            <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
+        {{ end }}
+    {{ else }}
+        {{/* Se a página atual não tem traduções explícitas (ex: se for a homepage ou uma página sem tradução),
+             podemos oferecer links para a homepage de cada idioma. */}}
+        {{ range .Site.Languages }}
+            {{/* Garante que não mostramos o link para o idioma atual */}}
+            {{ if ne .Lang $.Lang }}
+                <a href="{{ .Site.BaseURL | absLangURL }}">{{ .LanguageName }}</a>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+</div>
