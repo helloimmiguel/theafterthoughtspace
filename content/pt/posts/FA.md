@@ -1,6 +1,5 @@
 ---
-title: The Socio-Political aspect of Frutiger Aero [FA]
-lang: en
+title: The Socio-Political aspect of Frutiger Aero [EN]
 date: 2025-05-17
 ---
 

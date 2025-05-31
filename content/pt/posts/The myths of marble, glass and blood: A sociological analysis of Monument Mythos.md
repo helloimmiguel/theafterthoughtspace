@@ -1,6 +1,5 @@
 ---
 title: "The myths of marble, glass and blood: A sociological analysis of Monument Mythos [EN]"
-lang: en
 date: 2025-05-30
 ---
 
