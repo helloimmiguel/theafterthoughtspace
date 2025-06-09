@@ -40,3 +40,4 @@ i write about what i see, what i live, and what no one seems to notice. pretendi
 * 🐦 X/Twitter: [@helloimmiguel](https://x.com/helloimmiguel)
 * 🎞 Letterboxd: [@helloimmig](https://letterboxd.com/helloimmig/)
 * 📧 E-Mail: [helloimmiguel@yahoo.com](mailto:helloimmiguel@yahoo.com)
+---

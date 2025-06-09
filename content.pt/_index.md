@@ -44,3 +44,4 @@ um pouquinho sobre minha pessoa e meus interesses! se quiser saber mais, acesse 
 * 🐦 X/Twitter: [@helloimmiguel](https://x.com/helloimmiguel)
 * 🎞 Letterboxd: [@helloimmig](https://letterboxd.com/helloimmig/)
 * 📧 E-Mail: [helloimmiguel@yahoo.com](mailto:helloimmiguel@yahoo.com)
+--- 

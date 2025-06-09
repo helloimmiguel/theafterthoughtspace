@@ -27,14 +27,14 @@ enableRobotsTXT = true
 # see https://gohugo.io/content-management/multilingual/
 [languages]
   [languages.en]
-    title = "Bear Cub"
+    title = "The Afterthought Space"
     languageName = "🇬🇧"
     LanguageCode = "en-US"
     contentDir = "content"
     [languages.en.params]
       madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub) and love ❤️"
   [languages.pt]
-    title = "Bear Cub"
+    title = "The Afterthought Space"
     languageName = "🇧🇷"
     LanguageCode = "pt-BR"
     contentDir = "content.pt"
@@ -84,4 +84,4 @@ enableRobotsTXT = true
   # link by using a `hideReply` param in front matter.
   [params.author]
     name = "Miguel" # Your name as shown in the RSS feed metadata
-    email = "helloimmiguel@yahoo.com" # Added to the footer so readers can reply to posts
+    email = "helloimmiguel@yahoo.com" # Added to the footer so readers can reply to postsLookup
