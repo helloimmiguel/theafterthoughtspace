@@ -2,93 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-05-30T00:00:00+00:00</lastmod>
+    <loc>http://localhost:40505/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-BR"
-                href="http://localhost:1313/pt/"
+                href="http://localhost:40505/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/"
+                href="http://localhost:40505/en/"
                 />
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2025-05-30T00:00:00+00:00</lastmod>
+    <loc>http://localhost:40505/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-BR"
-                href="http://localhost:1313/pt/blog/"
+                href="http://localhost:40505/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/blog/"
+                href="http://localhost:40505/en/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/blog/the-myths-of-marble-glass-and-blood-a-sociological-analysis-of-monument-mythos/</loc>
-    <lastmod>2025-05-30T00:00:00+00:00</lastmod>
+    <loc>http://localhost:40505/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-BR"
-                href="http://localhost:1313/pt/blog/the-myths-of-marble-glass-and-blood-a-sociological-analysis-of-monument-mythos/"
+                href="http://localhost:40505/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/blog/the-myths-of-marble-glass-and-blood-a-sociological-analysis-of-monument-mythos/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/blog/ed/</loc>
-    <lastmod>2025-05-19T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-BR"
-                href="http://localhost:1313/pt/blog/ed/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/blog/ed/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/blog/fa/</loc>
-    <lastmod>2025-05-17T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-BR"
-                href="http://localhost:1313/pt/blog/fa/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/blog/fa/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-BR"
-                href="http://localhost:1313/pt/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/categories/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-BR"
-                href="http://localhost:1313/pt/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/"
+                href="http://localhost:40505/en/tags/"
                 />
   </url>
 </urlset>
